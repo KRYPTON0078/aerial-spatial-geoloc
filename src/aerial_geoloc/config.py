@@ -12,7 +12,7 @@ import yaml
 BackboneName = Literal["tiny_cnn", "resnet18", "resnet50", "vit_tiny"]
 LossName = Literal["infonce", "id", "infonce_id", "triplet"]
 EncoderMode = Literal["shared", "dual"]
-DatasetName = Literal["demo", "university1652"]
+DatasetName = Literal["demo", "university1652", "sim"]
 ViewName = Literal["drone", "satellite", "street"]
 
 
