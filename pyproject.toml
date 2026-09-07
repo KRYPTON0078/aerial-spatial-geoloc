@@ -1,0 +1,72 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "aerial-spatial-geoloc"
+version = "0.1.0"
+description = "PyTorch toolkit for drone–satellite / cross-view aerial geo-localization"
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.10"
+authors = [
+  { name = "Magne Dina Neves" },
+]
+keywords = [
+  "geo-localization",
+  "cross-view retrieval",
+  "drone",
+  "satellite",
+  "pytorch",
+  "university-1652",
+]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Science/Research",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = [
+  "torch>=2.1",
+  "torchvision>=0.16",
+  "numpy>=1.24",
+  "Pillow>=10.0",
+  "PyYAML>=6.0",
+  "tqdm>=4.66",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.0",
+  "pytest-cov>=5.0",
+]
+ui = [
+  "gradio>=4.44",
+]
+
+[project.urls]
+Homepage = "https://github.com/KRYPTON0078/aerial-spatial-geoloc"
+Repository = "https://github.com/KRYPTON0078/aerial-spatial-geoloc"
+Issues = "https://github.com/KRYPTON0078/aerial-spatial-geoloc/issues"
+
+[project.scripts]
+aerial-geoloc = "aerial_geoloc.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+aerial_geoloc = ["py.typed"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+addopts = "-q"
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"

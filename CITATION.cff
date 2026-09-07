@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+title: aerial-spatial-geoloc
+message: If you use this toolkit, please cite University-1652 (and WeatherPrompt if you use the weather ablation).
+type: software
+authors:
+  - family-names: Neves
+    given-names: Magne Dina
+repository-code: https://github.com/KRYPTON0078/aerial-spatial-geoloc
+license: MIT
+version: 0.1.0
+abstract: >
+  PyTorch toolkit for drone–satellite / cross-view aerial geo-localization,
+  with a University-1652 adapter and a synthetic demo split.
