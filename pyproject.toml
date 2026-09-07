@@ -47,6 +47,9 @@ dev = [
 ui = [
   "gradio>=4.44",
 ]
+study = [
+  "matplotlib>=3.8",
+]
 
 [project.urls]
 Homepage = "https://github.com/KRYPTON0078/aerial-spatial-geoloc"

@@ -76,6 +76,33 @@ def cmd_make_demo(args: argparse.Namespace) -> int:
     return 0
 
 
+def cmd_sim_generate(args: argparse.Namespace) -> int:
+    from aerial_geoloc.sim.world import generate_sim_dataset
+
+    root = generate_sim_dataset(
+        args.root,
+        train_locations=args.train_locations,
+        test_locations=args.test_locations,
+        drones_per_location=args.drones,
+        image_size=args.image_size,
+        seed=args.seed,
+    )
+    print(f"wrote simulated campus with pose metadata to {root}")
+    return 0
+
+
+def cmd_study(args: argparse.Namespace) -> int:
+    from aerial_geoloc.study.runner import run_study
+
+    run_study(
+        config_path=args.config,
+        reports_dir=args.reports,
+        figures_dir=args.figures,
+        regenerate_data=args.regenerate,
+    )
+    return 0
+
+
 def cmd_app(args: argparse.Namespace) -> int:
     from aerial_geoloc.app import launch_app
 
@@ -124,6 +151,23 @@ def build_parser() -> argparse.ArgumentParser:
     demo.add_argument("--drones", type=int, default=6)
     demo.add_argument("--image-size", type=int, default=128)
     demo.set_defaults(func=cmd_make_demo)
+
+    sim = sub.add_parser("sim-generate", help="Generate the simulated campus with pose metadata")
+    sim.add_argument("--root", type=Path, default=Path("data/sim"))
+    sim.add_argument("--train-locations", type=int, default=12)
+    sim.add_argument("--test-locations", type=int, default=8)
+    sim.add_argument("--drones", type=int, default=4)
+    sim.add_argument("--image-size", type=int, default=64)
+    sim.add_argument("--seed", type=int, default=42)
+    sim.set_defaults(func=cmd_sim_generate)
+
+    study = sub.add_parser("study", help="Run CPU simulation study and write figures/metrics")
+    _add_config(study)
+    study.set_defaults(config=Path("configs/study.yaml"))
+    study.add_argument("--reports", type=Path, default=Path("reports"))
+    study.add_argument("--figures", type=Path, default=Path("figures"))
+    study.add_argument("--regenerate", action="store_true", help="Rebuild data/sim even if present")
+    study.set_defaults(func=cmd_study)
 
     app = sub.add_parser("app", help="Optional Gradio UI (pip install '.[ui]')")
     _add_config(app)
