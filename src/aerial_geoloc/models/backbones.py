@@ -2,6 +2,8 @@
 
 from __future__ import annotations
 
+import os
+
 import torch
 from torch import nn
 from torchvision import models
@@ -10,7 +12,7 @@ from torchvision import models
 class TinyCNN(nn.Module):
     """~0.2M-param conv encoder for CPU demos and unit tests."""
 
-    def __init__(self) -> None:
+    def __init__(self, dropout: float = 0.0) -> None:
         super().__init__()
         self.features = nn.Sequential(
             nn.Conv2d(3, 32, kernel_size=3, stride=2, padding=1),
@@ -27,12 +29,13 @@ class TinyCNN(nn.Module):
             nn.ReLU(inplace=True),
         )
         self.pool = nn.AdaptiveAvgPool2d(1)
+        self.drop = nn.Dropout(dropout)
         self.num_features = 256
 
     def forward(self, x: torch.Tensor) -> torch.Tensor:
         x = self.features(x)
         x = self.pool(x).flatten(1)
-        return x
+        return self.drop(x)
 
 
 class TinyViT(nn.Module):
@@ -83,10 +86,20 @@ class TinyViT(nn.Module):
         return self.norm(x[:, 0])
 
 
+def _allow_pretrained_download() -> bool:
+    if os.environ.get("AERIAL_GEOL_OFFLINE", "").lower() in {"1", "true", "yes"}:
+        return False
+    if os.environ.get("HF_HUB_OFFLINE", "").lower() in {"1", "true", "yes"}:
+        return False
+    if os.environ.get("CI", "").lower() in {"1", "true"}:
+        return False
+    return True
+
+
 def _resnet(name: str, pretrained: bool) -> nn.Module:
     weights = None
     ctor = {"resnet18": models.resnet18, "resnet50": models.resnet50}[name]
-    if pretrained:
+    if pretrained and _allow_pretrained_download():
         weight_enum = {
             "resnet18": models.ResNet18_Weights.IMAGENET1K_V1,
             "resnet50": models.ResNet50_Weights.IMAGENET1K_V1,
@@ -106,7 +119,7 @@ def build_backbone(
     dropout: float = 0.0,
 ) -> nn.Module:
     if name == "tiny_cnn":
-        return TinyCNN()
+        return TinyCNN(dropout=dropout)
     if name in {"resnet18", "resnet50"}:
         return _resnet(name, pretrained=pretrained)
     if name == "vit_tiny":
