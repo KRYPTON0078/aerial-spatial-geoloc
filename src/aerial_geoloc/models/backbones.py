@@ -65,7 +65,10 @@ class TinyViT(nn.Module):
             batch_first=True,
             norm_first=True,
         )
-        self.encoder = nn.TransformerEncoder(layer, num_layers=depth)
+        try:
+            self.encoder = nn.TransformerEncoder(layer, num_layers=depth, enable_nested_tensor=False)
+        except TypeError:
+            self.encoder = nn.TransformerEncoder(layer, num_layers=depth)
         self.norm = nn.LayerNorm(dim)
         self.num_features = dim
         nn.init.trunc_normal_(self.pos_embed, std=0.02)

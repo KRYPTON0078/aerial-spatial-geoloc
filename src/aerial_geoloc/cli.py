@@ -59,7 +59,8 @@ def cmd_retrieve(args: argparse.Namespace) -> int:
         topk=args.topk,
         max_queries=args.max_queries,
     )
-    print(json.dumps(rows, indent=2))
+    if args.json:
+        print(json.dumps(rows, indent=2))
     return 0
 
 
@@ -113,6 +114,7 @@ def build_parser() -> argparse.ArgumentParser:
     ret.add_argument("--gallery-dir", type=Path, default=None)
     ret.add_argument("--topk", type=int, default=5)
     ret.add_argument("--max-queries", type=int, default=8)
+    ret.add_argument("--json", action="store_true", help="Also print machine-readable matches")
     ret.set_defaults(func=cmd_retrieve)
 
     demo = sub.add_parser("make-demo-data", help="Generate synthetic drone/satellite tiles")

@@ -5,7 +5,7 @@ from __future__ import annotations
 import types
 from dataclasses import dataclass, field, fields, is_dataclass
 from pathlib import Path
-from typing import Any, Literal, Union, get_args, get_origin
+from typing import Any, Literal, Union, get_args, get_origin, get_type_hints
 
 import yaml
 
@@ -52,13 +52,15 @@ def _coerce(cls: Any, value: Any) -> Any:
 def from_dict(cls: type, data: dict[str, Any]) -> Any:
     kwargs: dict[str, Any] = {}
     valid = {f.name: f for f in fields(cls)}
+    hints = get_type_hints(cls)
     unknown = set(data) - set(valid)
     if unknown:
         raise ValueError(f"unknown config keys for {cls.__name__}: {sorted(unknown)}")
     for name, f in valid.items():
         if name not in data:
             continue
-        kwargs[name] = _coerce(f.type, data[name])
+        hint = hints.get(name, f.type)
+        kwargs[name] = _coerce(hint, data[name])
     return cls(**kwargs)
 
 

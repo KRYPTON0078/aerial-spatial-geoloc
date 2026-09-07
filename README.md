@@ -117,9 +117,9 @@ Protocol matches the usual U1652 retrieval setup: embed query and gallery, rank 
 | Drone → Sat | U1652 test | ResNet-18 | shared | InfoNCE+ID | off | — | — | — | *placeholder — fill after you train on U1652* |
 | Sat → Drone | U1652 test | ResNet-18 | shared | InfoNCE+ID | off | — | — | — | *placeholder* |
 | Drone → Sat | U1652 test | ResNet-18 | shared | InfoNCE+ID | train-time fog/rain/night/snow | — | — | — | *placeholder; compare to WeatherPrompt table, do not copy their numbers* |
-| Drone → Sat | **synthetic demo** | TinyCNN | shared | InfoNCE+ID | off | *see run log* | *see run log* | *see run log* | CPU smoke test only; not comparable to U1652 |
+| Drone → Sat | **synthetic demo** (8 locs, 48 queries) | TinyCNN | shared | InfoNCE+ID | off | 0.812 | 1.000 | 0.906 | CPU, seed 42, `configs/demo.yaml`, **best.pt**. Geometric tiles, **not** University-1652. |
 
-I will not paste fabricated University-1652 scores. Demo-split numbers belong in `outputs/demo/metrics.jsonl` after `train --config configs/demo.yaml`.
+I will not paste fabricated University-1652 scores. The demo row above was measured in this repository on the synthetic split (`python -m aerial_geoloc.cli train --config configs/demo.yaml`). Re-runs can move a few points; they still say nothing about U1652.
 
 ## Design choices (skimmable)
 
