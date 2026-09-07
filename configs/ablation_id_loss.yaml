@@ -1,0 +1,33 @@
+# Ablation: identity classification only (University-1652-style ID loss, no InfoNCE).
+experiment_name: ablation_id_loss
+
+model:
+  backbone: tiny_cnn
+  encoder: shared
+  embed_dim: 128
+  pretrained: false
+
+loss:
+  name: id
+  id_weight: 1.0
+  infonce_weight: 0.0
+
+data:
+  dataset: demo
+  root: data/demo
+  image_size: 64
+  query_view: drone
+  gallery_view: satellite
+  weather_aug: false
+
+train:
+  epochs: 5
+  batch_size: 16
+  lr: 0.001
+  seed: 42
+  output_dir: outputs/ablation_id_loss
+  device: auto
+  deterministic: true
+
+eval:
+  recall_ks: [1, 5, 10]
