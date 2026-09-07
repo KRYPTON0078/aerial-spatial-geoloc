@@ -15,6 +15,7 @@ from aerial_geoloc.data.demo import ensure_demo_dataset, load_demo_samples
 from aerial_geoloc.data.sample import Sample
 from aerial_geoloc.data.transforms import build_eval_transforms, build_train_transforms
 from aerial_geoloc.data.university1652 import load_university1652_samples
+from aerial_geoloc.sim.world import ensure_sim_dataset, load_sim_samples
 
 
 def _open_rgb(path: Path) -> Image.Image:
@@ -25,6 +26,8 @@ def _open_rgb(path: Path) -> Image.Image:
 def load_samples(dataset: str, root: Path, split: str) -> list[Sample]:
     if dataset == "demo":
         return load_demo_samples(root, split)
+    if dataset == "sim":
+        return load_sim_samples(root, split)
     if dataset == "university1652":
         return load_university1652_samples(root, split)
     raise ValueError(f"unknown dataset {dataset!r}")
@@ -109,6 +112,15 @@ def prepare_data_root(cfg: DataConfig) -> Path:
     root = Path(cfg.root)
     if cfg.dataset == "demo":
         ensure_demo_dataset(
+            root,
+            train_locations=cfg.demo_train_locations,
+            test_locations=cfg.demo_test_locations,
+            drones_per_location=cfg.demo_drones_per_location,
+            streets_per_location=cfg.demo_streets_per_location,
+            image_size=max(cfg.image_size, 64),
+        )
+    elif cfg.dataset == "sim":
+        ensure_sim_dataset(
             root,
             train_locations=cfg.demo_train_locations,
             test_locations=cfg.demo_test_locations,

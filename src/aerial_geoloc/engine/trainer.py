@@ -129,6 +129,7 @@ def run_training(cfg: ExperimentConfig) -> dict[str, float]:
         logger.info("resumed from %s epoch=%s", cfg.train.resume, start_epoch)
 
     last_eval: dict[str, float] = {}
+    history: list[dict] = []
     for epoch in range(start_epoch, cfg.train.epochs + 1):
         train_metrics = train_one_epoch(
             model, criterion, train_loader, optimizer, device, scaler if cfg.train.amp else None,
@@ -150,6 +151,7 @@ def run_training(cfg: ExperimentConfig) -> dict[str, float]:
             )
             logger.info("epoch %s eval %s", epoch, {k: round(v, 4) if isinstance(v, float) else v for k, v in last_eval.items()})
             metrics_log.log({"split": "eval", "epoch": epoch, **last_eval})
+            history.append({"epoch": epoch, "train": train_metrics, "eval": last_eval})
             r1 = float(last_eval.get("R@1", 0.0))
             is_best = r1 >= best_r1
             if is_best:
@@ -163,6 +165,9 @@ def run_training(cfg: ExperimentConfig) -> dict[str, float]:
         _dump_yaml(cfg),
         encoding="utf-8",
     )
+    import json
+
+    (output_dir / "history.json").write_text(json.dumps(history, indent=2), encoding="utf-8")
     return last_eval
 
 
