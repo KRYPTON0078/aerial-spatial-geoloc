@@ -11,11 +11,11 @@ def test_all_shipped_configs_load():
         "ablation_weather.yaml",
         "ablation_vit.yaml",
         "ablation_id_loss.yaml",
+        "study.yaml",
     ):
         cfg = load_config(Path("configs") / name)
         assert cfg.experiment_name
         assert cfg.model.backbone
-
 
 
 def test_unknown_key_rejected(tmp_path: Path):

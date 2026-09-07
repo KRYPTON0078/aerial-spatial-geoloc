@@ -17,6 +17,15 @@ def test_parser_weather_flags():
     assert off.weather_aug is False
 
 
+def test_parser_study_and_sim():
+    parser = build_parser()
+    study = parser.parse_args(["study"])
+    assert study.command == "study"
+    assert str(study.config).endswith("study.yaml")
+    sim = parser.parse_args(["sim-generate", "--root", "data/sim"])
+    assert sim.command == "sim-generate"
+
+
 def test_parser_retrieve():
     parser = build_parser()
     args = parser.parse_args(["retrieve", "--topk", "3", "--max-queries", "2"])
