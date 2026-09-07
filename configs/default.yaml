@@ -1,0 +1,46 @@
+# University-1652 training config.
+# Imagery is gated — see scripts/prepare_u1652.md. This file does not download
+# anything. Do not fill README / reports with U1652 R@1 until you measure it here.
+experiment_name: university1652_resnet18
+
+model:
+  backbone: resnet18
+  encoder: shared
+  embed_dim: 512
+  pretrained: true
+  dropout: 0.1
+
+loss:
+  name: infonce_id
+  temperature: 0.07
+  id_weight: 1.0
+  infonce_weight: 1.0
+
+data:
+  dataset: university1652
+  # Local extract only (gitignored). Nested University-1652/ is auto-detected.
+  root: data/university1652
+  image_size: 256
+  query_view: drone
+  gallery_view: satellite
+  weather_aug: false
+  weather_prob: 0.5
+
+train:
+  epochs: 80
+  batch_size: 32
+  lr: 0.0003
+  weight_decay: 0.0005
+  seed: 42
+  num_workers: 4
+  device: auto
+  output_dir: outputs/university1652_resnet18
+  log_interval: 20
+  eval_every: 5
+  save_every: 5
+  amp: true
+  deterministic: false
+
+eval:
+  recall_ks: [1, 5, 10]
+  batch_size: 64

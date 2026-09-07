@@ -1,0 +1,50 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+dist/
+build/
+*.so
+
+# Virtualenv / tooling
+.venv/
+venv/
+.env
+.python-version
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.tox/
+
+# Editors
+.vscode/
+.idea/
+*.swp
+
+# Experiment outputs (keep directory via .gitkeep)
+outputs/**
+!outputs/.gitkeep
+checkpoints/
+*.pt
+*.pth
+*.ckpt
+runs/
+wandb/
+lightning_logs/
+
+# Data: generate demo locally; never commit University-1652 imagery
+data/demo/
+data/university1652/
+data/University-Release/
+data/University-1652/
+data/sues200/
+University-1652/
+University-Release/
+*.zip
+
+# OS
+.DS_Store
+Thumbs.db

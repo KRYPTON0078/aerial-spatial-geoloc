@@ -1,0 +1,2553 @@
+{
+  "kind": "simulated_campus",
+  "note": "Procedural tiles with known pose. Not University-1652 imagery.",
+  "image_size": 64,
+  "train_locations": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "test_locations": [
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19
+  ],
+  "drones_per_location": 4,
+  "grid_spacing_m": 20.0,
+  "frames": [
+    {
+      "path": "train/drone/0000/00.png",
+      "location_id": 0,
+      "location_name": "0000",
+      "view": "drone",
+      "split": "train",
+      "pose": {
+        "x_m": 0.0,
+        "y_m": 0.0,
+        "altitude_m": 70.0,
+        "yaw_deg": -28.0,
+        "pitch_deg": -18.0
+      },
+      "weather": "clean"
+    },
+    {
+      "path": "train/drone/0000/01.png",
+      "location_id": 0,
+      "location_name": "0000",
+      "view": "drone",
+      "split": "train",
+      "pose": {
+        "x_m": 0.0,
+        "y_m": 0.0,
+        "altitude_m": 82.0,
+        "yaw_deg": -17.0,
+        "pitch_deg": -18.0
+      },
+      "weather": "clean"
+    },
+    {
+      "path": "train/drone/0000/02.png",
+      "location_id": 0,
+      "location_name": "0000",
+      "view": "drone",
+      "split": "train",
+      "pose": {
+        "x_m": 0.0,
+        "y_m": 0.0,
+        "altitude_m": 94.0,
+        "yaw_deg": -6.0,
+        "pitch_deg": -18.0
+      },
+      "weather": "clean"
+    },
+    {
+      "path": "train/drone/0000/03.png",
+      "location_id": 0,
+      "location_name": "0000",
+      "view": "drone",
+      "split": "train",
+      "pose": {
+        "x_m": 0.0,
+        "y_m": 0.0,
+        "altitude_m": 106.0,
+        "yaw_deg": 5.0,
+        "pitch_deg": -18.0
+      },
+      "weather": "clean"
+    },
+    {
+      "path": "train/satellite/0000/00.png",
+      "location_id": 0,
+      "location_name": "0000",
+      "view": "satellite",
+      "split": "train",
+      "pose": {
+        "x_m": 0.0,
+        "y_m": 0.0,
+        "altitude_m": 500.0,
+        "yaw_deg": 0.0,
+        "pitch_deg": -90.0
+      },
+      "weather": "clean"
+    },
+    {
+      "path": "train/street/0000/00.png",
+      "location_id": 0,
+      "location_name": "0000",
+      "view": "street",
+      "split": "train",
+      "pose": {
+        "x_m": 0.0,
+        "y_m": 0.0,
+        "altitude_m": 1.7,
+        "yaw_deg": 0.0,
+        "pitch_deg": 0.0
+      },
+      "weather": "clean"
+    },
+    {
+      "path": "train/drone/0001/00.png",
+      "location_id": 1,
+      "location_name": "0001",
+      "view": "drone",
+      "split": "train",
+      "pose": {
+        "x_m": 20.0,
+        "y_m": 0.0,
+        "altitude_m": 70.0,
+        "yaw_deg": -28.0,
+        "pitch_deg": -18.0
+      },
+      "weather": "clean"
+    },
+    {
+      "path": "train/drone/0001/01.png",
+      "location_id": 1,
+      "location_name": "0001",
+      "view": "drone",
+      "split": "train",
+      "pose": {
+        "x_m": 20.0,
+        "y_m": 0.0,
+        "altitude_m": 82.0,
+        "yaw_deg": -17.0,
+        "pitch_deg": -18.0
+      },
+      "weather": "clean"
+    },
+    {
+      "path": "train/drone/0001/02.png",
+      "location_id": 1,
+      "location_name": "0001",
+      "view": "drone",
+      "split": "train",
+      "pose": {
+        "x_m": 20.0,
+        "y_m": 0.0,
+        "altitude_m": 94.0,
+        "yaw_deg": -6.0,
+        "pitch_deg": -18.0
+      },
+      "weather": "clean"
+    },
+    {
+      "path": "train/drone/0001/03.png",
+      "location_id": 1,
+      "location_name": "0001",
+      "view": "drone",
+      "split": "train",
+      "pose": {
+        "x_m": 20.0,
+        "y_m": 0.0,
+        "altitude_m": 106.0,
+        "yaw_deg": 5.0,
+        "pitch_deg": -18.0
+      },
+      "weather": "clean"
+    },
+    {
+      "path": "train/satellite/0001/00.png",
+      "location_id": 1,
+      "location_name": "0001",
+      "view": "satellite",
+      "split": "train",
+      "pose": {
+        "x_m": 20.0,
+        "y_m": 0.0,
+        "altitude_m": 500.0,
+        "yaw_deg": 0.0,
+        "pitch_deg": -90.0
+      },
+      "weather": "clean"
+    },
+    {
+      "path": "train/street/0001/00.png",
+      "location_id": 1,
+      "location_name": "0001",
+      "view": "street",
+      "split": "train",
+      "pose": {
+        "x_m": 20.0,
+        "y_m": 0.0,
+        "altitude_m": 1.7,
+        "yaw_deg": 0.0,
+        "pitch_deg": 0.0
+      },
+      "weather": "clean"
+    },
+    {
+      "path": "train/drone/0002/00.png",
+      "location_id": 2,
+      "location_name": "0002",
+      "view": "drone",
+      "split": "train",
+      "pose": {
+        "x_m": 40.0,
+        "y_m": 0.0,
+        "altitude_m": 70.0,
+        "yaw_deg": -28.0,
+        "pitch_deg": -18.0
+      },
+      "weather": "clean"
+    },
+    {
+      "path": "train/drone/0002/01.png",
+      "location_id": 2,
+      "location_name": "0002",
+      "view": "drone",
+      "split": "train",
+      "pose": {
+        "x_m": 40.0,
+        "y_m": 0.0,
+        "altitude_m": 82.0,
+        "yaw_deg": -17.0,
+        "pitch_deg": -18.0
+      },
+      "weather": "clean"
+    },
+    {
+      "path": "train/drone/0002/02.png",
+      "location_id": 2,
+      "location_name": "0002",
+      "view": "drone",
+      "split": "train",
+      "pose": {
+        "x_m": 40.0,
+        "y_m": 0.0,
+        "altitude_m": 94.0,
+        "yaw_deg": -6.0,
+        "pitch_deg": -18.0
+      },
+      "weather": "clean"
+    },
+    {
+      "path": "train/drone/0002/03.png",
+      "location_id": 2,
+      "location_name": "0002",
+      "view": "drone",
+      "split": "train",
+      "pose": {
+        "x_m": 40.0,
+        "y_m": 0.0,
+        "altitude_m": 106.0,
+        "yaw_deg": 5.0,
+        "pitch_deg": -18.0
+      },
+      "weather": "clean"
+    },
+    {
+      "path": "train/satellite/0002/00.png",
+      "location_id": 2,
+      "location_name": "0002",
+      "view": "satellite",
+      "split": "train",
+      "pose": {
+        "x_m": 40.0,
+        "y_m": 0.0,
+        "altitude_m": 500.0,
+        "yaw_deg": 0.0,
+        "pitch_deg": -90.0
+      },
+      "weather": "clean"
+    },
+    {
+      "path": "train/street/0002/00.png",
+      "location_id": 2,
+      "location_name": "0002",
+      "view": "street",
+      "split": "train",
+      "pose": {
+        "x_m": 40.0,
+        "y_m": 0.0,
+        "altitude_m": 1.7,
+        "yaw_deg": 0.0,
+        "pitch_deg": 0.0
+      },
+      "weather": "clean"
+    },
+    {
+      "path": "train/drone/0003/00.png",
+      "location_id": 3,
+      "location_name": "0003",
+      "view": "drone",
+      "split": "train",
+      "pose": {
+        "x_m": 60.0,
+        "y_m": 0.0,
+        "altitude_m": 70.0,
+        "yaw_deg": -28.0,
+        "pitch_deg": -18.0
+      },
+      "weather": "clean"
+    },
+    {
+      "path": "train/drone/0003/01.png",
+      "location_id": 3,
+      "location_name": "0003",
+      "view": "drone",
+      "split": "train",
+      "pose": {
+        "x_m": 60.0,
+        "y_m": 0.0,
+        "altitude_m": 82.0,
+        "yaw_deg": -17.0,
+        "pitch_deg": -18.0
+      },
+      "weather": "clean"
+    },
+    {
+      "path": "train/drone/0003/02.png",
+      "location_id": 3,
+      "location_name": "0003",
+      "view": "drone",
+      "split": "train",
+      "pose": {
+        "x_m": 60.0,
+        "y_m": 0.0,
+        "altitude_m": 94.0,
+        "yaw_deg": -6.0,
+        "pitch_deg": -18.0
+      },
+      "weather": "clean"
+    },
+    {
+      "path": "train/drone/0003/03.png",
+      "location_id": 3,
+      "location_name": "0003",
+      "view": "drone",
+      "split": "train",
+      "pose": {
+        "x_m": 60.0,
+        "y_m": 0.0,
+        "altitude_m": 106.0,
+        "yaw_deg": 5.0,
+        "pitch_deg": -18.0
+      },
+      "weather": "clean"
+    },
+    {
+      "path": "train/satellite/0003/00.png",
+      "location_id": 3,
+      "location_name": "0003",
+      "view": "satellite",
+      "split": "train",
+      "pose": {
+        "x_m": 60.0,
+        "y_m": 0.0,
+        "altitude_m": 500.0,
+        "yaw_deg": 0.0,
+        "pitch_deg": -90.0
+      },
+      "weather": "clean"
+    },
+    {
+      "path": "train/street/0003/00.png",
+      "location_id": 3,
+      "location_name": "0003",
+      "view": "street",
+      "split": "train",
+      "pose": {
+        "x_m": 60.0,
+        "y_m": 0.0,
+        "altitude_m": 1.7,
+        "yaw_deg": 0.0,
+        "pitch_deg": 0.0
+      },
+      "weather": "clean"
+    },
+    {
+      "path": "train/drone/0004/00.png",
+      "location_id": 4,
+      "location_name": "0004",
+      "view": "drone",
+      "split": "train",
+      "pose": {
+        "x_m": 80.0,
+        "y_m": 0.0,
+        "altitude_m": 70.0,
+        "yaw_deg": -28.0,
+        "pitch_deg": -18.0
+      },
+      "weather": "clean"
+    },
+    {
+      "path": "train/drone/0004/01.png",
+      "location_id": 4,
+      "location_name": "0004",
+      "view": "drone",
+      "split": "train",
+      "pose": {
+        "x_m": 80.0,
+        "y_m": 0.0,
+        "altitude_m": 82.0,
+        "yaw_deg": -17.0,
+        "pitch_deg": -18.0
+      },
+      "weather": "clean"
+    },
+    {
+      "path": "train/drone/0004/02.png",
+      "location_id": 4,
+      "location_name": "0004",
+      "view": "drone",
+      "split": "train",
+      "pose": {
+        "x_m": 80.0,
+        "y_m": 0.0,
+        "altitude_m": 94.0,
+        "yaw_deg": -6.0,
+        "pitch_deg": -18.0
+      },
+      "weather": "clean"
+    },
+    {
+      "path": "train/drone/0004/03.png",
+      "location_id": 4,
+      "location_name": "0004",
+      "view": "drone",
+      "split": "train",
+      "pose": {
+        "x_m": 80.0,
+        "y_m": 0.0,
+        "altitude_m": 106.0,
+        "yaw_deg": 5.0,
+        "pitch_deg": -18.0
+      },
+      "weather": "clean"
+    },
+    {
+      "path": "train/satellite/0004/00.png",
+      "location_id": 4,
+      "location_name": "0004",
+      "view": "satellite",
+      "split": "train",
+      "pose": {
+        "x_m": 80.0,
+        "y_m": 0.0,
+        "altitude_m": 500.0,
+        "yaw_deg": 0.0,
+        "pitch_deg": -90.0
+      },
+      "weather": "clean"
+    },
+    {
+      "path": "train/street/0004/00.png",
+      "location_id": 4,
+      "location_name": "0004",
+      "view": "street",
+      "split": "train",
+      "pose": {
+        "x_m": 80.0,
+        "y_m": 0.0,
+        "altitude_m": 1.7,
+        "yaw_deg": 0.0,
+        "pitch_deg": 0.0
+      },
+      "weather": "clean"
+    },
+    {
+      "path": "train/drone/0005/00.png",
+      "location_id": 5,
+      "location_name": "0005",
+      "view": "drone",
+      "split": "train",
+      "pose": {
+        "x_m": 100.0,
+        "y_m": 0.0,
+        "altitude_m": 70.0,
+        "yaw_deg": -28.0,
+        "pitch_deg": -18.0
+      },
+      "weather": "clean"
+    },
+    {
+      "path": "train/drone/0005/01.png",
+      "location_id": 5,
+      "location_name": "0005",
+      "view": "drone",
+      "split": "train",
+      "pose": {
+        "x_m": 100.0,
+        "y_m": 0.0,
+        "altitude_m": 82.0,
+        "yaw_deg": -17.0,
+        "pitch_deg": -18.0
+      },
+      "weather": "clean"
+    },
+    {
+      "path": "train/drone/0005/02.png",
+      "location_id": 5,
+      "location_name": "0005",
+      "view": "drone",
+      "split": "train",
+      "pose": {
+        "x_m": 100.0,
+        "y_m": 0.0,
+        "altitude_m": 94.0,
+        "yaw_deg": -6.0,
+        "pitch_deg": -18.0
+      },
+      "weather": "clean"
+    },
+    {
+      "path": "train/drone/0005/03.png",
+      "location_id": 5,
+      "location_name": "0005",
+      "view": "drone",
+      "split": "train",
+      "pose": {
+        "x_m": 100.0,
+        "y_m": 0.0,
+        "altitude_m": 106.0,
+        "yaw_deg": 5.0,
+        "pitch_deg": -18.0
+      },
+      "weather": "clean"
+    },
+    {
+      "path": "train/satellite/0005/00.png",
+      "location_id": 5,
+      "location_name": "0005",
+      "view": "satellite",
+      "split": "train",
+      "pose": {
+        "x_m": 100.0,
+        "y_m": 0.0,
+        "altitude_m": 500.0,
+        "yaw_deg": 0.0,
+        "pitch_deg": -90.0
+      },
+      "weather": "clean"
+    },
+    {
+      "path": "train/street/0005/00.png",
+      "location_id": 5,
+      "location_name": "0005",
+      "view": "street",
+      "split": "train",
+      "pose": {
+        "x_m": 100.0,
+        "y_m": 0.0,
+        "altitude_m": 1.7,
+        "yaw_deg": 0.0,
+        "pitch_deg": 0.0
+      },
+      "weather": "clean"
+    },
+    {
+      "path": "train/drone/0006/00.png",
+      "location_id": 6,
+      "location_name": "0006",
+      "view": "drone",
+      "split": "train",
+      "pose": {
+        "x_m": 120.0,
+        "y_m": 0.0,
+        "altitude_m": 70.0,
+        "yaw_deg": -28.0,
+        "pitch_deg": -18.0
+      },
+      "weather": "clean"
+    },
+    {
+      "path": "train/drone/0006/01.png",
+      "location_id": 6,
+      "location_name": "0006",
+      "view": "drone",
+      "split": "train",
+      "pose": {
+        "x_m": 120.0,
+        "y_m": 0.0,
+        "altitude_m": 82.0,
+        "yaw_deg": -17.0,
+        "pitch_deg": -18.0
+      },
+      "weather": "clean"
+    },
+    {
+      "path": "train/drone/0006/02.png",
+      "location_id": 6,
+      "location_name": "0006",
+      "view": "drone",
+      "split": "train",
+      "pose": {
+        "x_m": 120.0,
+        "y_m": 0.0,
+        "altitude_m": 94.0,
+        "yaw_deg": -6.0,
+        "pitch_deg": -18.0
+      },
+      "weather": "clean"
+    },
+    {
+      "path": "train/drone/0006/03.png",
+      "location_id": 6,
+      "location_name": "0006",
+      "view": "drone",
+      "split": "train",
+      "pose": {
+        "x_m": 120.0,
+        "y_m": 0.0,
+        "altitude_m": 106.0,
+        "yaw_deg": 5.0,
+        "pitch_deg": -18.0
+      },
+      "weather": "clean"
+    },
+    {
+      "path": "train/satellite/0006/00.png",
+      "location_id": 6,
+      "location_name": "0006",
+      "view": "satellite",
+      "split": "train",
+      "pose": {
+        "x_m": 120.0,
+        "y_m": 0.0,
+        "altitude_m": 500.0,
+        "yaw_deg": 0.0,
+        "pitch_deg": -90.0
+      },
+      "weather": "clean"
+    },
+    {
+      "path": "train/street/0006/00.png",
+      "location_id": 6,
+      "location_name": "0006",
+      "view": "street",
+      "split": "train",
+      "pose": {
+        "x_m": 120.0,
+        "y_m": 0.0,
+        "altitude_m": 1.7,
+        "yaw_deg": 0.0,
+        "pitch_deg": 0.0
+      },
+      "weather": "clean"
+    },
+    {
+      "path": "train/drone/0007/00.png",
+      "location_id": 7,
+      "location_name": "0007",
+      "view": "drone",
+      "split": "train",
+      "pose": {
+        "x_m": 140.0,
+        "y_m": 0.0,
+        "altitude_m": 70.0,
+        "yaw_deg": -28.0,
+        "pitch_deg": -18.0
+      },
+      "weather": "clean"
+    },
+    {
+      "path": "train/drone/0007/01.png",
+      "location_id": 7,
+      "location_name": "0007",
+      "view": "drone",
+      "split": "train",
+      "pose": {
+        "x_m": 140.0,
+        "y_m": 0.0,
+        "altitude_m": 82.0,
+        "yaw_deg": -17.0,
+        "pitch_deg": -18.0
+      },
+      "weather": "clean"
+    },
+    {
+      "path": "train/drone/0007/02.png",
+      "location_id": 7,
+      "location_name": "0007",
+      "view": "drone",
+      "split": "train",
+      "pose": {
+        "x_m": 140.0,
+        "y_m": 0.0,
+        "altitude_m": 94.0,
+        "yaw_deg": -6.0,
+        "pitch_deg": -18.0
+      },
+      "weather": "clean"
+    },
+    {
+      "path": "train/drone/0007/03.png",
+      "location_id": 7,
+      "location_name": "0007",
+      "view": "drone",
+      "split": "train",
+      "pose": {
+        "x_m": 140.0,
+        "y_m": 0.0,
+        "altitude_m": 106.0,
+        "yaw_deg": 5.0,
+        "pitch_deg": -18.0
+      },
+      "weather": "clean"
+    },
+    {
+      "path": "train/satellite/0007/00.png",
+      "location_id": 7,
+      "location_name": "0007",
+      "view": "satellite",
+      "split": "train",
+      "pose": {
+        "x_m": 140.0,
+        "y_m": 0.0,
+        "altitude_m": 500.0,
+        "yaw_deg": 0.0,
+        "pitch_deg": -90.0
+      },
+      "weather": "clean"
+    },
+    {
+      "path": "train/street/0007/00.png",
+      "location_id": 7,
+      "location_name": "0007",
+      "view": "street",
+      "split": "train",
+      "pose": {
+        "x_m": 140.0,
+        "y_m": 0.0,
+        "altitude_m": 1.7,
+        "yaw_deg": 0.0,
+        "pitch_deg": 0.0
+      },
+      "weather": "clean"
+    },
+    {
+      "path": "train/drone/0008/00.png",
+      "location_id": 8,
+      "location_name": "0008",
+      "view": "drone",
+      "split": "train",
+      "pose": {
+        "x_m": 0.0,
+        "y_m": 20.0,
+        "altitude_m": 70.0,
+        "yaw_deg": -28.0,
+        "pitch_deg": -18.0
+      },
+      "weather": "clean"
+    },
+    {
+      "path": "train/drone/0008/01.png",
+      "location_id": 8,
+      "location_name": "0008",
+      "view": "drone",
+      "split": "train",
+      "pose": {
+        "x_m": 0.0,
+        "y_m": 20.0,
+        "altitude_m": 82.0,
+        "yaw_deg": -17.0,
+        "pitch_deg": -18.0
+      },
+      "weather": "clean"
+    },
+    {
+      "path": "train/drone/0008/02.png",
+      "location_id": 8,
+      "location_name": "0008",
+      "view": "drone",
+      "split": "train",
+      "pose": {
+        "x_m": 0.0,
+        "y_m": 20.0,
+        "altitude_m": 94.0,
+        "yaw_deg": -6.0,
+        "pitch_deg": -18.0
+      },
+      "weather": "clean"
+    },
+    {
+      "path": "train/drone/0008/03.png",
+      "location_id": 8,
+      "location_name": "0008",
+      "view": "drone",
+      "split": "train",
+      "pose": {
+        "x_m": 0.0,
+        "y_m": 20.0,
+        "altitude_m": 106.0,
+        "yaw_deg": 5.0,
+        "pitch_deg": -18.0
+      },
+      "weather": "clean"
+    },
+    {
+      "path": "train/satellite/0008/00.png",
+      "location_id": 8,
+      "location_name": "0008",
+      "view": "satellite",
+      "split": "train",
+      "pose": {
+        "x_m": 0.0,
+        "y_m": 20.0,
+        "altitude_m": 500.0,
+        "yaw_deg": 0.0,
+        "pitch_deg": -90.0
+      },
+      "weather": "clean"
+    },
+    {
+      "path": "train/street/0008/00.png",
+      "location_id": 8,
+      "location_name": "0008",
+      "view": "street",
+      "split": "train",
+      "pose": {
+        "x_m": 0.0,
+        "y_m": 20.0,
+        "altitude_m": 1.7,
+        "yaw_deg": 0.0,
+        "pitch_deg": 0.0
+      },
+      "weather": "clean"
+    },
+    {
+      "path": "train/drone/0009/00.png",
+      "location_id": 9,
+      "location_name": "0009",
+      "view": "drone",
+      "split": "train",
+      "pose": {
+        "x_m": 20.0,
+        "y_m": 20.0,
+        "altitude_m": 70.0,
+        "yaw_deg": -28.0,
+        "pitch_deg": -18.0
+      },
+      "weather": "clean"
+    },
+    {
+      "path": "train/drone/0009/01.png",
+      "location_id": 9,
+      "location_name": "0009",
+      "view": "drone",
+      "split": "train",
+      "pose": {
+        "x_m": 20.0,
+        "y_m": 20.0,
+        "altitude_m": 82.0,
+        "yaw_deg": -17.0,
+        "pitch_deg": -18.0
+      },
+      "weather": "clean"
+    },
+    {
+      "path": "train/drone/0009/02.png",
+      "location_id": 9,
+      "location_name": "0009",
+      "view": "drone",
+      "split": "train",
+      "pose": {
+        "x_m": 20.0,
+        "y_m": 20.0,
+        "altitude_m": 94.0,
+        "yaw_deg": -6.0,
+        "pitch_deg": -18.0
+      },
+      "weather": "clean"
+    },
+    {
+      "path": "train/drone/0009/03.png",
+      "location_id": 9,
+      "location_name": "0009",
+      "view": "drone",
+      "split": "train",
+      "pose": {
+        "x_m": 20.0,
+        "y_m": 20.0,
+        "altitude_m": 106.0,
+        "yaw_deg": 5.0,
+        "pitch_deg": -18.0
+      },
+      "weather": "clean"
+    },
+    {
+      "path": "train/satellite/0009/00.png",
+      "location_id": 9,
+      "location_name": "0009",
+      "view": "satellite",
+      "split": "train",
+      "pose": {
+        "x_m": 20.0,
+        "y_m": 20.0,
+        "altitude_m": 500.0,
+        "yaw_deg": 0.0,
+        "pitch_deg": -90.0
+      },
+      "weather": "clean"
+    },
+    {
+      "path": "train/street/0009/00.png",
+      "location_id": 9,
+      "location_name": "0009",
+      "view": "street",
+      "split": "train",
+      "pose": {
+        "x_m": 20.0,
+        "y_m": 20.0,
+        "altitude_m": 1.7,
+        "yaw_deg": 0.0,
+        "pitch_deg": 0.0
+      },
+      "weather": "clean"
+    },
+    {
+      "path": "train/drone/0010/00.png",
+      "location_id": 10,
+      "location_name": "0010",
+      "view": "drone",
+      "split": "train",
+      "pose": {
+        "x_m": 40.0,
+        "y_m": 20.0,
+        "altitude_m": 70.0,
+        "yaw_deg": -28.0,
+        "pitch_deg": -18.0
+      },
+      "weather": "clean"
+    },
+    {
+      "path": "train/drone/0010/01.png",
+      "location_id": 10,
+      "location_name": "0010",
+      "view": "drone",
+      "split": "train",
+      "pose": {
+        "x_m": 40.0,
+        "y_m": 20.0,
+        "altitude_m": 82.0,
+        "yaw_deg": -17.0,
+        "pitch_deg": -18.0
+      },
+      "weather": "clean"
+    },
+    {
+      "path": "train/drone/0010/02.png",
+      "location_id": 10,
+      "location_name": "0010",
+      "view": "drone",
+      "split": "train",
+      "pose": {
+        "x_m": 40.0,
+        "y_m": 20.0,
+        "altitude_m": 94.0,
+        "yaw_deg": -6.0,
+        "pitch_deg": -18.0
+      },
+      "weather": "clean"
+    },
+    {
+      "path": "train/drone/0010/03.png",
+      "location_id": 10,
+      "location_name": "0010",
+      "view": "drone",
+      "split": "train",
+      "pose": {
+        "x_m": 40.0,
+        "y_m": 20.0,
+        "altitude_m": 106.0,
+        "yaw_deg": 5.0,
+        "pitch_deg": -18.0
+      },
+      "weather": "clean"
+    },
+    {
+      "path": "train/satellite/0010/00.png",
+      "location_id": 10,
+      "location_name": "0010",
+      "view": "satellite",
+      "split": "train",
+      "pose": {
+        "x_m": 40.0,
+        "y_m": 20.0,
+        "altitude_m": 500.0,
+        "yaw_deg": 0.0,
+        "pitch_deg": -90.0
+      },
+      "weather": "clean"
+    },
+    {
+      "path": "train/street/0010/00.png",
+      "location_id": 10,
+      "location_name": "0010",
+      "view": "street",
+      "split": "train",
+      "pose": {
+        "x_m": 40.0,
+        "y_m": 20.0,
+        "altitude_m": 1.7,
+        "yaw_deg": 0.0,
+        "pitch_deg": 0.0
+      },
+      "weather": "clean"
+    },
+    {
+      "path": "train/drone/0011/00.png",
+      "location_id": 11,
+      "location_name": "0011",
+      "view": "drone",
+      "split": "train",
+      "pose": {
+        "x_m": 60.0,
+        "y_m": 20.0,
+        "altitude_m": 70.0,
+        "yaw_deg": -28.0,
+        "pitch_deg": -18.0
+      },
+      "weather": "clean"
+    },
+    {
+      "path": "train/drone/0011/01.png",
+      "location_id": 11,
+      "location_name": "0011",
+      "view": "drone",
+      "split": "train",
+      "pose": {
+        "x_m": 60.0,
+        "y_m": 20.0,
+        "altitude_m": 82.0,
+        "yaw_deg": -17.0,
+        "pitch_deg": -18.0
+      },
+      "weather": "clean"
+    },
+    {
+      "path": "train/drone/0011/02.png",
+      "location_id": 11,
+      "location_name": "0011",
+      "view": "drone",
+      "split": "train",
+      "pose": {
+        "x_m": 60.0,
+        "y_m": 20.0,
+        "altitude_m": 94.0,
+        "yaw_deg": -6.0,
+        "pitch_deg": -18.0
+      },
+      "weather": "clean"
+    },
+    {
+      "path": "train/drone/0011/03.png",
+      "location_id": 11,
+      "location_name": "0011",
+      "view": "drone",
+      "split": "train",
+      "pose": {
+        "x_m": 60.0,
+        "y_m": 20.0,
+        "altitude_m": 106.0,
+        "yaw_deg": 5.0,
+        "pitch_deg": -18.0
+      },
+      "weather": "clean"
+    },
+    {
+      "path": "train/satellite/0011/00.png",
+      "location_id": 11,
+      "location_name": "0011",
+      "view": "satellite",
+      "split": "train",
+      "pose": {
+        "x_m": 60.0,
+        "y_m": 20.0,
+        "altitude_m": 500.0,
+        "yaw_deg": 0.0,
+        "pitch_deg": -90.0
+      },
+      "weather": "clean"
+    },
+    {
+      "path": "train/street/0011/00.png",
+      "location_id": 11,
+      "location_name": "0011",
+      "view": "street",
+      "split": "train",
+      "pose": {
+        "x_m": 60.0,
+        "y_m": 20.0,
+        "altitude_m": 1.7,
+        "yaw_deg": 0.0,
+        "pitch_deg": 0.0
+      },
+      "weather": "clean"
+    },
+    {
+      "path": "test/query_drone/0012/00.png",
+      "location_id": 12,
+      "location_name": "0012",
+      "view": "drone",
+      "split": "query",
+      "pose": {
+        "x_m": 80.0,
+        "y_m": 20.0,
+        "altitude_m": 70.0,
+        "yaw_deg": -28.0,
+        "pitch_deg": -18.0
+      },
+      "weather": "clean"
+    },
+    {
+      "path": "test/gallery_drone/0012/00.png",
+      "location_id": 12,
+      "location_name": "0012",
+      "view": "drone",
+      "split": "gallery",
+      "pose": {
+        "x_m": 80.0,
+        "y_m": 20.0,
+        "altitude_m": 70.0,
+        "yaw_deg": -28.0,
+        "pitch_deg": -18.0
+      },
+      "weather": "clean"
+    },
+    {
+      "path": "test/query_drone/0012/01.png",
+      "location_id": 12,
+      "location_name": "0012",
+      "view": "drone",
+      "split": "query",
+      "pose": {
+        "x_m": 80.0,
+        "y_m": 20.0,
+        "altitude_m": 82.0,
+        "yaw_deg": -17.0,
+        "pitch_deg": -18.0
+      },
+      "weather": "clean"
+    },
+    {
+      "path": "test/gallery_drone/0012/01.png",
+      "location_id": 12,
+      "location_name": "0012",
+      "view": "drone",
+      "split": "gallery",
+      "pose": {
+        "x_m": 80.0,
+        "y_m": 20.0,
+        "altitude_m": 82.0,
+        "yaw_deg": -17.0,
+        "pitch_deg": -18.0
+      },
+      "weather": "clean"
+    },
+    {
+      "path": "test/query_drone/0012/02.png",
+      "location_id": 12,
+      "location_name": "0012",
+      "view": "drone",
+      "split": "query",
+      "pose": {
+        "x_m": 80.0,
+        "y_m": 20.0,
+        "altitude_m": 94.0,
+        "yaw_deg": -6.0,
+        "pitch_deg": -18.0
+      },
+      "weather": "clean"
+    },
+    {
+      "path": "test/gallery_drone/0012/02.png",
+      "location_id": 12,
+      "location_name": "0012",
+      "view": "drone",
+      "split": "gallery",
+      "pose": {
+        "x_m": 80.0,
+        "y_m": 20.0,
+        "altitude_m": 94.0,
+        "yaw_deg": -6.0,
+        "pitch_deg": -18.0
+      },
+      "weather": "clean"
+    },
+    {
+      "path": "test/query_drone/0012/03.png",
+      "location_id": 12,
+      "location_name": "0012",
+      "view": "drone",
+      "split": "query",
+      "pose": {
+        "x_m": 80.0,
+        "y_m": 20.0,
+        "altitude_m": 106.0,
+        "yaw_deg": 5.0,
+        "pitch_deg": -18.0
+      },
+      "weather": "clean"
+    },
+    {
+      "path": "test/gallery_drone/0012/03.png",
+      "location_id": 12,
+      "location_name": "0012",
+      "view": "drone",
+      "split": "gallery",
+      "pose": {
+        "x_m": 80.0,
+        "y_m": 20.0,
+        "altitude_m": 106.0,
+        "yaw_deg": 5.0,
+        "pitch_deg": -18.0
+      },
+      "weather": "clean"
+    },
+    {
+      "path": "test/query_satellite/0012/00.png",
+      "location_id": 12,
+      "location_name": "0012",
+      "view": "satellite",
+      "split": "query",
+      "pose": {
+        "x_m": 80.0,
+        "y_m": 20.0,
+        "altitude_m": 500.0,
+        "yaw_deg": 0.0,
+        "pitch_deg": -90.0
+      },
+      "weather": "clean"
+    },
+    {
+      "path": "test/gallery_satellite/0012/00.png",
+      "location_id": 12,
+      "location_name": "0012",
+      "view": "satellite",
+      "split": "gallery",
+      "pose": {
+        "x_m": 80.0,
+        "y_m": 20.0,
+        "altitude_m": 500.0,
+        "yaw_deg": 0.0,
+        "pitch_deg": -90.0
+      },
+      "weather": "clean"
+    },
+    {
+      "path": "test/query_street/0012/00.png",
+      "location_id": 12,
+      "location_name": "0012",
+      "view": "street",
+      "split": "query",
+      "pose": {
+        "x_m": 80.0,
+        "y_m": 20.0,
+        "altitude_m": 1.7,
+        "yaw_deg": 0.0,
+        "pitch_deg": 0.0
+      },
+      "weather": "clean"
+    },
+    {
+      "path": "test/gallery_street/0012/00.png",
+      "location_id": 12,
+      "location_name": "0012",
+      "view": "street",
+      "split": "gallery",
+      "pose": {
+        "x_m": 80.0,
+        "y_m": 20.0,
+        "altitude_m": 1.7,
+        "yaw_deg": 0.0,
+        "pitch_deg": 0.0
+      },
+      "weather": "clean"
+    },
+    {
+      "path": "test/query_drone/0013/00.png",
+      "location_id": 13,
+      "location_name": "0013",
+      "view": "drone",
+      "split": "query",
+      "pose": {
+        "x_m": 100.0,
+        "y_m": 20.0,
+        "altitude_m": 70.0,
+        "yaw_deg": -28.0,
+        "pitch_deg": -18.0
+      },
+      "weather": "clean"
+    },
+    {
+      "path": "test/gallery_drone/0013/00.png",
+      "location_id": 13,
+      "location_name": "0013",
+      "view": "drone",
+      "split": "gallery",
+      "pose": {
+        "x_m": 100.0,
+        "y_m": 20.0,
+        "altitude_m": 70.0,
+        "yaw_deg": -28.0,
+        "pitch_deg": -18.0
+      },
+      "weather": "clean"
+    },
+    {
+      "path": "test/query_drone/0013/01.png",
+      "location_id": 13,
+      "location_name": "0013",
+      "view": "drone",
+      "split": "query",
+      "pose": {
+        "x_m": 100.0,
+        "y_m": 20.0,
+        "altitude_m": 82.0,
+        "yaw_deg": -17.0,
+        "pitch_deg": -18.0
+      },
+      "weather": "clean"
+    },
+    {
+      "path": "test/gallery_drone/0013/01.png",
+      "location_id": 13,
+      "location_name": "0013",
+      "view": "drone",
+      "split": "gallery",
+      "pose": {
+        "x_m": 100.0,
+        "y_m": 20.0,
+        "altitude_m": 82.0,
+        "yaw_deg": -17.0,
+        "pitch_deg": -18.0
+      },
+      "weather": "clean"
+    },
+    {
+      "path": "test/query_drone/0013/02.png",
+      "location_id": 13,
+      "location_name": "0013",
+      "view": "drone",
+      "split": "query",
+      "pose": {
+        "x_m": 100.0,
+        "y_m": 20.0,
+        "altitude_m": 94.0,
+        "yaw_deg": -6.0,
+        "pitch_deg": -18.0
+      },
+      "weather": "clean"
+    },
+    {
+      "path": "test/gallery_drone/0013/02.png",
+      "location_id": 13,
+      "location_name": "0013",
+      "view": "drone",
+      "split": "gallery",
+      "pose": {
+        "x_m": 100.0,
+        "y_m": 20.0,
+        "altitude_m": 94.0,
+        "yaw_deg": -6.0,
+        "pitch_deg": -18.0
+      },
+      "weather": "clean"
+    },
+    {
+      "path": "test/query_drone/0013/03.png",
+      "location_id": 13,
+      "location_name": "0013",
+      "view": "drone",
+      "split": "query",
+      "pose": {
+        "x_m": 100.0,
+        "y_m": 20.0,
+        "altitude_m": 106.0,
+        "yaw_deg": 5.0,
+        "pitch_deg": -18.0
+      },
+      "weather": "clean"
+    },
+    {
+      "path": "test/gallery_drone/0013/03.png",
+      "location_id": 13,
+      "location_name": "0013",
+      "view": "drone",
+      "split": "gallery",
+      "pose": {
+        "x_m": 100.0,
+        "y_m": 20.0,
+        "altitude_m": 106.0,
+        "yaw_deg": 5.0,
+        "pitch_deg": -18.0
+      },
+      "weather": "clean"
+    },
+    {
+      "path": "test/query_satellite/0013/00.png",
+      "location_id": 13,
+      "location_name": "0013",
+      "view": "satellite",
+      "split": "query",
+      "pose": {
+        "x_m": 100.0,
+        "y_m": 20.0,
+        "altitude_m": 500.0,
+        "yaw_deg": 0.0,
+        "pitch_deg": -90.0
+      },
+      "weather": "clean"
+    },
+    {
+      "path": "test/gallery_satellite/0013/00.png",
+      "location_id": 13,
+      "location_name": "0013",
+      "view": "satellite",
+      "split": "gallery",
+      "pose": {
+        "x_m": 100.0,
+        "y_m": 20.0,
+        "altitude_m": 500.0,
+        "yaw_deg": 0.0,
+        "pitch_deg": -90.0
+      },
+      "weather": "clean"
+    },
+    {
+      "path": "test/query_street/0013/00.png",
+      "location_id": 13,
+      "location_name": "0013",
+      "view": "street",
+      "split": "query",
+      "pose": {
+        "x_m": 100.0,
+        "y_m": 20.0,
+        "altitude_m": 1.7,
+        "yaw_deg": 0.0,
+        "pitch_deg": 0.0
+      },
+      "weather": "clean"
+    },
+    {
+      "path": "test/gallery_street/0013/00.png",
+      "location_id": 13,
+      "location_name": "0013",
+      "view": "street",
+      "split": "gallery",
+      "pose": {
+        "x_m": 100.0,
+        "y_m": 20.0,
+        "altitude_m": 1.7,
+        "yaw_deg": 0.0,
+        "pitch_deg": 0.0
+      },
+      "weather": "clean"
+    },
+    {
+      "path": "test/query_drone/0014/00.png",
+      "location_id": 14,
+      "location_name": "0014",
+      "view": "drone",
+      "split": "query",
+      "pose": {
+        "x_m": 120.0,
+        "y_m": 20.0,
+        "altitude_m": 70.0,
+        "yaw_deg": -28.0,
+        "pitch_deg": -18.0
+      },
+      "weather": "clean"
+    },
+    {
+      "path": "test/gallery_drone/0014/00.png",
+      "location_id": 14,
+      "location_name": "0014",
+      "view": "drone",
+      "split": "gallery",
+      "pose": {
+        "x_m": 120.0,
+        "y_m": 20.0,
+        "altitude_m": 70.0,
+        "yaw_deg": -28.0,
+        "pitch_deg": -18.0
+      },
+      "weather": "clean"
+    },
+    {
+      "path": "test/query_drone/0014/01.png",
+      "location_id": 14,
+      "location_name": "0014",
+      "view": "drone",
+      "split": "query",
+      "pose": {
+        "x_m": 120.0,
+        "y_m": 20.0,
+        "altitude_m": 82.0,
+        "yaw_deg": -17.0,
+        "pitch_deg": -18.0
+      },
+      "weather": "clean"
+    },
+    {
+      "path": "test/gallery_drone/0014/01.png",
+      "location_id": 14,
+      "location_name": "0014",
+      "view": "drone",
+      "split": "gallery",
+      "pose": {
+        "x_m": 120.0,
+        "y_m": 20.0,
+        "altitude_m": 82.0,
+        "yaw_deg": -17.0,
+        "pitch_deg": -18.0
+      },
+      "weather": "clean"
+    },
+    {
+      "path": "test/query_drone/0014/02.png",
+      "location_id": 14,
+      "location_name": "0014",
+      "view": "drone",
+      "split": "query",
+      "pose": {
+        "x_m": 120.0,
+        "y_m": 20.0,
+        "altitude_m": 94.0,
+        "yaw_deg": -6.0,
+        "pitch_deg": -18.0
+      },
+      "weather": "clean"
+    },
+    {
+      "path": "test/gallery_drone/0014/02.png",
+      "location_id": 14,
+      "location_name": "0014",
+      "view": "drone",
+      "split": "gallery",
+      "pose": {
+        "x_m": 120.0,
+        "y_m": 20.0,
+        "altitude_m": 94.0,
+        "yaw_deg": -6.0,
+        "pitch_deg": -18.0
+      },
+      "weather": "clean"
+    },
+    {
+      "path": "test/query_drone/0014/03.png",
+      "location_id": 14,
+      "location_name": "0014",
+      "view": "drone",
+      "split": "query",
+      "pose": {
+        "x_m": 120.0,
+        "y_m": 20.0,
+        "altitude_m": 106.0,
+        "yaw_deg": 5.0,
+        "pitch_deg": -18.0
+      },
+      "weather": "clean"
+    },
+    {
+      "path": "test/gallery_drone/0014/03.png",
+      "location_id": 14,
+      "location_name": "0014",
+      "view": "drone",
+      "split": "gallery",
+      "pose": {
+        "x_m": 120.0,
+        "y_m": 20.0,
+        "altitude_m": 106.0,
+        "yaw_deg": 5.0,
+        "pitch_deg": -18.0
+      },
+      "weather": "clean"
+    },
+    {
+      "path": "test/query_satellite/0014/00.png",
+      "location_id": 14,
+      "location_name": "0014",
+      "view": "satellite",
+      "split": "query",
+      "pose": {
+        "x_m": 120.0,
+        "y_m": 20.0,
+        "altitude_m": 500.0,
+        "yaw_deg": 0.0,
+        "pitch_deg": -90.0
+      },
+      "weather": "clean"
+    },
+    {
+      "path": "test/gallery_satellite/0014/00.png",
+      "location_id": 14,
+      "location_name": "0014",
+      "view": "satellite",
+      "split": "gallery",
+      "pose": {
+        "x_m": 120.0,
+        "y_m": 20.0,
+        "altitude_m": 500.0,
+        "yaw_deg": 0.0,
+        "pitch_deg": -90.0
+      },
+      "weather": "clean"
+    },
+    {
+      "path": "test/query_street/0014/00.png",
+      "location_id": 14,
+      "location_name": "0014",
+      "view": "street",
+      "split": "query",
+      "pose": {
+        "x_m": 120.0,
+        "y_m": 20.0,
+        "altitude_m": 1.7,
+        "yaw_deg": 0.0,
+        "pitch_deg": 0.0
+      },
+      "weather": "clean"
+    },
+    {
+      "path": "test/gallery_street/0014/00.png",
+      "location_id": 14,
+      "location_name": "0014",
+      "view": "street",
+      "split": "gallery",
+      "pose": {
+        "x_m": 120.0,
+        "y_m": 20.0,
+        "altitude_m": 1.7,
+        "yaw_deg": 0.0,
+        "pitch_deg": 0.0
+      },
+      "weather": "clean"
+    },
+    {
+      "path": "test/query_drone/0015/00.png",
+      "location_id": 15,
+      "location_name": "0015",
+      "view": "drone",
+      "split": "query",
+      "pose": {
+        "x_m": 140.0,
+        "y_m": 20.0,
+        "altitude_m": 70.0,
+        "yaw_deg": -28.0,
+        "pitch_deg": -18.0
+      },
+      "weather": "clean"
+    },
+    {
+      "path": "test/gallery_drone/0015/00.png",
+      "location_id": 15,
+      "location_name": "0015",
+      "view": "drone",
+      "split": "gallery",
+      "pose": {
+        "x_m": 140.0,
+        "y_m": 20.0,
+        "altitude_m": 70.0,
+        "yaw_deg": -28.0,
+        "pitch_deg": -18.0
+      },
+      "weather": "clean"
+    },
+    {
+      "path": "test/query_drone/0015/01.png",
+      "location_id": 15,
+      "location_name": "0015",
+      "view": "drone",
+      "split": "query",
+      "pose": {
+        "x_m": 140.0,
+        "y_m": 20.0,
+        "altitude_m": 82.0,
+        "yaw_deg": -17.0,
+        "pitch_deg": -18.0
+      },
+      "weather": "clean"
+    },
+    {
+      "path": "test/gallery_drone/0015/01.png",
+      "location_id": 15,
+      "location_name": "0015",
+      "view": "drone",
+      "split": "gallery",
+      "pose": {
+        "x_m": 140.0,
+        "y_m": 20.0,
+        "altitude_m": 82.0,
+        "yaw_deg": -17.0,
+        "pitch_deg": -18.0
+      },
+      "weather": "clean"
+    },
+    {
+      "path": "test/query_drone/0015/02.png",
+      "location_id": 15,
+      "location_name": "0015",
+      "view": "drone",
+      "split": "query",
+      "pose": {
+        "x_m": 140.0,
+        "y_m": 20.0,
+        "altitude_m": 94.0,
+        "yaw_deg": -6.0,
+        "pitch_deg": -18.0
+      },
+      "weather": "clean"
+    },
+    {
+      "path": "test/gallery_drone/0015/02.png",
+      "location_id": 15,
+      "location_name": "0015",
+      "view": "drone",
+      "split": "gallery",
+      "pose": {
+        "x_m": 140.0,
+        "y_m": 20.0,
+        "altitude_m": 94.0,
+        "yaw_deg": -6.0,
+        "pitch_deg": -18.0
+      },
+      "weather": "clean"
+    },
+    {
+      "path": "test/query_drone/0015/03.png",
+      "location_id": 15,
+      "location_name": "0015",
+      "view": "drone",
+      "split": "query",
+      "pose": {
+        "x_m": 140.0,
+        "y_m": 20.0,
+        "altitude_m": 106.0,
+        "yaw_deg": 5.0,
+        "pitch_deg": -18.0
+      },
+      "weather": "clean"
+    },
+    {
+      "path": "test/gallery_drone/0015/03.png",
+      "location_id": 15,
+      "location_name": "0015",
+      "view": "drone",
+      "split": "gallery",
+      "pose": {
+        "x_m": 140.0,
+        "y_m": 20.0,
+        "altitude_m": 106.0,
+        "yaw_deg": 5.0,
+        "pitch_deg": -18.0
+      },
+      "weather": "clean"
+    },
+    {
+      "path": "test/query_satellite/0015/00.png",
+      "location_id": 15,
+      "location_name": "0015",
+      "view": "satellite",
+      "split": "query",
+      "pose": {
+        "x_m": 140.0,
+        "y_m": 20.0,
+        "altitude_m": 500.0,
+        "yaw_deg": 0.0,
+        "pitch_deg": -90.0
+      },
+      "weather": "clean"
+    },
+    {
+      "path": "test/gallery_satellite/0015/00.png",
+      "location_id": 15,
+      "location_name": "0015",
+      "view": "satellite",
+      "split": "gallery",
+      "pose": {
+        "x_m": 140.0,
+        "y_m": 20.0,
+        "altitude_m": 500.0,
+        "yaw_deg": 0.0,
+        "pitch_deg": -90.0
+      },
+      "weather": "clean"
+    },
+    {
+      "path": "test/query_street/0015/00.png",
+      "location_id": 15,
+      "location_name": "0015",
+      "view": "street",
+      "split": "query",
+      "pose": {
+        "x_m": 140.0,
+        "y_m": 20.0,
+        "altitude_m": 1.7,
+        "yaw_deg": 0.0,
+        "pitch_deg": 0.0
+      },
+      "weather": "clean"
+    },
+    {
+      "path": "test/gallery_street/0015/00.png",
+      "location_id": 15,
+      "location_name": "0015",
+      "view": "street",
+      "split": "gallery",
+      "pose": {
+        "x_m": 140.0,
+        "y_m": 20.0,
+        "altitude_m": 1.7,
+        "yaw_deg": 0.0,
+        "pitch_deg": 0.0
+      },
+      "weather": "clean"
+    },
+    {
+      "path": "test/query_drone/0016/00.png",
+      "location_id": 16,
+      "location_name": "0016",
+      "view": "drone",
+      "split": "query",
+      "pose": {
+        "x_m": 0.0,
+        "y_m": 40.0,
+        "altitude_m": 70.0,
+        "yaw_deg": -28.0,
+        "pitch_deg": -18.0
+      },
+      "weather": "clean"
+    },
+    {
+      "path": "test/gallery_drone/0016/00.png",
+      "location_id": 16,
+      "location_name": "0016",
+      "view": "drone",
+      "split": "gallery",
+      "pose": {
+        "x_m": 0.0,
+        "y_m": 40.0,
+        "altitude_m": 70.0,
+        "yaw_deg": -28.0,
+        "pitch_deg": -18.0
+      },
+      "weather": "clean"
+    },
+    {
+      "path": "test/query_drone/0016/01.png",
+      "location_id": 16,
+      "location_name": "0016",
+      "view": "drone",
+      "split": "query",
+      "pose": {
+        "x_m": 0.0,
+        "y_m": 40.0,
+        "altitude_m": 82.0,
+        "yaw_deg": -17.0,
+        "pitch_deg": -18.0
+      },
+      "weather": "clean"
+    },
+    {
+      "path": "test/gallery_drone/0016/01.png",
+      "location_id": 16,
+      "location_name": "0016",
+      "view": "drone",
+      "split": "gallery",
+      "pose": {
+        "x_m": 0.0,
+        "y_m": 40.0,
+        "altitude_m": 82.0,
+        "yaw_deg": -17.0,
+        "pitch_deg": -18.0
+      },
+      "weather": "clean"
+    },
+    {
+      "path": "test/query_drone/0016/02.png",
+      "location_id": 16,
+      "location_name": "0016",
+      "view": "drone",
+      "split": "query",
+      "pose": {
+        "x_m": 0.0,
+        "y_m": 40.0,
+        "altitude_m": 94.0,
+        "yaw_deg": -6.0,
+        "pitch_deg": -18.0
+      },
+      "weather": "clean"
+    },
+    {
+      "path": "test/gallery_drone/0016/02.png",
+      "location_id": 16,
+      "location_name": "0016",
+      "view": "drone",
+      "split": "gallery",
+      "pose": {
+        "x_m": 0.0,
+        "y_m": 40.0,
+        "altitude_m": 94.0,
+        "yaw_deg": -6.0,
+        "pitch_deg": -18.0
+      },
+      "weather": "clean"
+    },
+    {
+      "path": "test/query_drone/0016/03.png",
+      "location_id": 16,
+      "location_name": "0016",
+      "view": "drone",
+      "split": "query",
+      "pose": {
+        "x_m": 0.0,
+        "y_m": 40.0,
+        "altitude_m": 106.0,
+        "yaw_deg": 5.0,
+        "pitch_deg": -18.0
+      },
+      "weather": "clean"
+    },
+    {
+      "path": "test/gallery_drone/0016/03.png",
+      "location_id": 16,
+      "location_name": "0016",
+      "view": "drone",
+      "split": "gallery",
+      "pose": {
+        "x_m": 0.0,
+        "y_m": 40.0,
+        "altitude_m": 106.0,
+        "yaw_deg": 5.0,
+        "pitch_deg": -18.0
+      },
+      "weather": "clean"
+    },
+    {
+      "path": "test/query_satellite/0016/00.png",
+      "location_id": 16,
+      "location_name": "0016",
+      "view": "satellite",
+      "split": "query",
+      "pose": {
+        "x_m": 0.0,
+        "y_m": 40.0,
+        "altitude_m": 500.0,
+        "yaw_deg": 0.0,
+        "pitch_deg": -90.0
+      },
+      "weather": "clean"
+    },
+    {
+      "path": "test/gallery_satellite/0016/00.png",
+      "location_id": 16,
+      "location_name": "0016",
+      "view": "satellite",
+      "split": "gallery",
+      "pose": {
+        "x_m": 0.0,
+        "y_m": 40.0,
+        "altitude_m": 500.0,
+        "yaw_deg": 0.0,
+        "pitch_deg": -90.0
+      },
+      "weather": "clean"
+    },
+    {
+      "path": "test/query_street/0016/00.png",
+      "location_id": 16,
+      "location_name": "0016",
+      "view": "street",
+      "split": "query",
+      "pose": {
+        "x_m": 0.0,
+        "y_m": 40.0,
+        "altitude_m": 1.7,
+        "yaw_deg": 0.0,
+        "pitch_deg": 0.0
+      },
+      "weather": "clean"
+    },
+    {
+      "path": "test/gallery_street/0016/00.png",
+      "location_id": 16,
+      "location_name": "0016",
+      "view": "street",
+      "split": "gallery",
+      "pose": {
+        "x_m": 0.0,
+        "y_m": 40.0,
+        "altitude_m": 1.7,
+        "yaw_deg": 0.0,
+        "pitch_deg": 0.0
+      },
+      "weather": "clean"
+    },
+    {
+      "path": "test/query_drone/0017/00.png",
+      "location_id": 17,
+      "location_name": "0017",
+      "view": "drone",
+      "split": "query",
+      "pose": {
+        "x_m": 20.0,
+        "y_m": 40.0,
+        "altitude_m": 70.0,
+        "yaw_deg": -28.0,
+        "pitch_deg": -18.0
+      },
+      "weather": "clean"
+    },
+    {
+      "path": "test/gallery_drone/0017/00.png",
+      "location_id": 17,
+      "location_name": "0017",
+      "view": "drone",
+      "split": "gallery",
+      "pose": {
+        "x_m": 20.0,
+        "y_m": 40.0,
+        "altitude_m": 70.0,
+        "yaw_deg": -28.0,
+        "pitch_deg": -18.0
+      },
+      "weather": "clean"
+    },
+    {
+      "path": "test/query_drone/0017/01.png",
+      "location_id": 17,
+      "location_name": "0017",
+      "view": "drone",
+      "split": "query",
+      "pose": {
+        "x_m": 20.0,
+        "y_m": 40.0,
+        "altitude_m": 82.0,
+        "yaw_deg": -17.0,
+        "pitch_deg": -18.0
+      },
+      "weather": "clean"
+    },
+    {
+      "path": "test/gallery_drone/0017/01.png",
+      "location_id": 17,
+      "location_name": "0017",
+      "view": "drone",
+      "split": "gallery",
+      "pose": {
+        "x_m": 20.0,
+        "y_m": 40.0,
+        "altitude_m": 82.0,
+        "yaw_deg": -17.0,
+        "pitch_deg": -18.0
+      },
+      "weather": "clean"
+    },
+    {
+      "path": "test/query_drone/0017/02.png",
+      "location_id": 17,
+      "location_name": "0017",
+      "view": "drone",
+      "split": "query",
+      "pose": {
+        "x_m": 20.0,
+        "y_m": 40.0,
+        "altitude_m": 94.0,
+        "yaw_deg": -6.0,
+        "pitch_deg": -18.0
+      },
+      "weather": "clean"
+    },
+    {
+      "path": "test/gallery_drone/0017/02.png",
+      "location_id": 17,
+      "location_name": "0017",
+      "view": "drone",
+      "split": "gallery",
+      "pose": {
+        "x_m": 20.0,
+        "y_m": 40.0,
+        "altitude_m": 94.0,
+        "yaw_deg": -6.0,
+        "pitch_deg": -18.0
+      },
+      "weather": "clean"
+    },
+    {
+      "path": "test/query_drone/0017/03.png",
+      "location_id": 17,
+      "location_name": "0017",
+      "view": "drone",
+      "split": "query",
+      "pose": {
+        "x_m": 20.0,
+        "y_m": 40.0,
+        "altitude_m": 106.0,
+        "yaw_deg": 5.0,
+        "pitch_deg": -18.0
+      },
+      "weather": "clean"
+    },
+    {
+      "path": "test/gallery_drone/0017/03.png",
+      "location_id": 17,
+      "location_name": "0017",
+      "view": "drone",
+      "split": "gallery",
+      "pose": {
+        "x_m": 20.0,
+        "y_m": 40.0,
+        "altitude_m": 106.0,
+        "yaw_deg": 5.0,
+        "pitch_deg": -18.0
+      },
+      "weather": "clean"
+    },
+    {
+      "path": "test/query_satellite/0017/00.png",
+      "location_id": 17,
+      "location_name": "0017",
+      "view": "satellite",
+      "split": "query",
+      "pose": {
+        "x_m": 20.0,
+        "y_m": 40.0,
+        "altitude_m": 500.0,
+        "yaw_deg": 0.0,
+        "pitch_deg": -90.0
+      },
+      "weather": "clean"
+    },
+    {
+      "path": "test/gallery_satellite/0017/00.png",
+      "location_id": 17,
+      "location_name": "0017",
+      "view": "satellite",
+      "split": "gallery",
+      "pose": {
+        "x_m": 20.0,
+        "y_m": 40.0,
+        "altitude_m": 500.0,
+        "yaw_deg": 0.0,
+        "pitch_deg": -90.0
+      },
+      "weather": "clean"
+    },
+    {
+      "path": "test/query_street/0017/00.png",
+      "location_id": 17,
+      "location_name": "0017",
+      "view": "street",
+      "split": "query",
+      "pose": {
+        "x_m": 20.0,
+        "y_m": 40.0,
+        "altitude_m": 1.7,
+        "yaw_deg": 0.0,
+        "pitch_deg": 0.0
+      },
+      "weather": "clean"
+    },
+    {
+      "path": "test/gallery_street/0017/00.png",
+      "location_id": 17,
+      "location_name": "0017",
+      "view": "street",
+      "split": "gallery",
+      "pose": {
+        "x_m": 20.0,
+        "y_m": 40.0,
+        "altitude_m": 1.7,
+        "yaw_deg": 0.0,
+        "pitch_deg": 0.0
+      },
+      "weather": "clean"
+    },
+    {
+      "path": "test/query_drone/0018/00.png",
+      "location_id": 18,
+      "location_name": "0018",
+      "view": "drone",
+      "split": "query",
+      "pose": {
+        "x_m": 40.0,
+        "y_m": 40.0,
+        "altitude_m": 70.0,
+        "yaw_deg": -28.0,
+        "pitch_deg": -18.0
+      },
+      "weather": "clean"
+    },
+    {
+      "path": "test/gallery_drone/0018/00.png",
+      "location_id": 18,
+      "location_name": "0018",
+      "view": "drone",
+      "split": "gallery",
+      "pose": {
+        "x_m": 40.0,
+        "y_m": 40.0,
+        "altitude_m": 70.0,
+        "yaw_deg": -28.0,
+        "pitch_deg": -18.0
+      },
+      "weather": "clean"
+    },
+    {
+      "path": "test/query_drone/0018/01.png",
+      "location_id": 18,
+      "location_name": "0018",
+      "view": "drone",
+      "split": "query",
+      "pose": {
+        "x_m": 40.0,
+        "y_m": 40.0,
+        "altitude_m": 82.0,
+        "yaw_deg": -17.0,
+        "pitch_deg": -18.0
+      },
+      "weather": "clean"
+    },
+    {
+      "path": "test/gallery_drone/0018/01.png",
+      "location_id": 18,
+      "location_name": "0018",
+      "view": "drone",
+      "split": "gallery",
+      "pose": {
+        "x_m": 40.0,
+        "y_m": 40.0,
+        "altitude_m": 82.0,
+        "yaw_deg": -17.0,
+        "pitch_deg": -18.0
+      },
+      "weather": "clean"
+    },
+    {
+      "path": "test/query_drone/0018/02.png",
+      "location_id": 18,
+      "location_name": "0018",
+      "view": "drone",
+      "split": "query",
+      "pose": {
+        "x_m": 40.0,
+        "y_m": 40.0,
+        "altitude_m": 94.0,
+        "yaw_deg": -6.0,
+        "pitch_deg": -18.0
+      },
+      "weather": "clean"
+    },
+    {
+      "path": "test/gallery_drone/0018/02.png",
+      "location_id": 18,
+      "location_name": "0018",
+      "view": "drone",
+      "split": "gallery",
+      "pose": {
+        "x_m": 40.0,
+        "y_m": 40.0,
+        "altitude_m": 94.0,
+        "yaw_deg": -6.0,
+        "pitch_deg": -18.0
+      },
+      "weather": "clean"
+    },
+    {
+      "path": "test/query_drone/0018/03.png",
+      "location_id": 18,
+      "location_name": "0018",
+      "view": "drone",
+      "split": "query",
+      "pose": {
+        "x_m": 40.0,
+        "y_m": 40.0,
+        "altitude_m": 106.0,
+        "yaw_deg": 5.0,
+        "pitch_deg": -18.0
+      },
+      "weather": "clean"
+    },
+    {
+      "path": "test/gallery_drone/0018/03.png",
+      "location_id": 18,
+      "location_name": "0018",
+      "view": "drone",
+      "split": "gallery",
+      "pose": {
+        "x_m": 40.0,
+        "y_m": 40.0,
+        "altitude_m": 106.0,
+        "yaw_deg": 5.0,
+        "pitch_deg": -18.0
+      },
+      "weather": "clean"
+    },
+    {
+      "path": "test/query_satellite/0018/00.png",
+      "location_id": 18,
+      "location_name": "0018",
+      "view": "satellite",
+      "split": "query",
+      "pose": {
+        "x_m": 40.0,
+        "y_m": 40.0,
+        "altitude_m": 500.0,
+        "yaw_deg": 0.0,
+        "pitch_deg": -90.0
+      },
+      "weather": "clean"
+    },
+    {
+      "path": "test/gallery_satellite/0018/00.png",
+      "location_id": 18,
+      "location_name": "0018",
+      "view": "satellite",
+      "split": "gallery",
+      "pose": {
+        "x_m": 40.0,
+        "y_m": 40.0,
+        "altitude_m": 500.0,
+        "yaw_deg": 0.0,
+        "pitch_deg": -90.0
+      },
+      "weather": "clean"
+    },
+    {
+      "path": "test/query_street/0018/00.png",
+      "location_id": 18,
+      "location_name": "0018",
+      "view": "street",
+      "split": "query",
+      "pose": {
+        "x_m": 40.0,
+        "y_m": 40.0,
+        "altitude_m": 1.7,
+        "yaw_deg": 0.0,
+        "pitch_deg": 0.0
+      },
+      "weather": "clean"
+    },
+    {
+      "path": "test/gallery_street/0018/00.png",
+      "location_id": 18,
+      "location_name": "0018",
+      "view": "street",
+      "split": "gallery",
+      "pose": {
+        "x_m": 40.0,
+        "y_m": 40.0,
+        "altitude_m": 1.7,
+        "yaw_deg": 0.0,
+        "pitch_deg": 0.0
+      },
+      "weather": "clean"
+    },
+    {
+      "path": "test/query_drone/0019/00.png",
+      "location_id": 19,
+      "location_name": "0019",
+      "view": "drone",
+      "split": "query",
+      "pose": {
+        "x_m": 60.0,
+        "y_m": 40.0,
+        "altitude_m": 70.0,
+        "yaw_deg": -28.0,
+        "pitch_deg": -18.0
+      },
+      "weather": "clean"
+    },
+    {
+      "path": "test/gallery_drone/0019/00.png",
+      "location_id": 19,
+      "location_name": "0019",
+      "view": "drone",
+      "split": "gallery",
+      "pose": {
+        "x_m": 60.0,
+        "y_m": 40.0,
+        "altitude_m": 70.0,
+        "yaw_deg": -28.0,
+        "pitch_deg": -18.0
+      },
+      "weather": "clean"
+    },
+    {
+      "path": "test/query_drone/0019/01.png",
+      "location_id": 19,
+      "location_name": "0019",
+      "view": "drone",
+      "split": "query",
+      "pose": {
+        "x_m": 60.0,
+        "y_m": 40.0,
+        "altitude_m": 82.0,
+        "yaw_deg": -17.0,
+        "pitch_deg": -18.0
+      },
+      "weather": "clean"
+    },
+    {
+      "path": "test/gallery_drone/0019/01.png",
+      "location_id": 19,
+      "location_name": "0019",
+      "view": "drone",
+      "split": "gallery",
+      "pose": {
+        "x_m": 60.0,
+        "y_m": 40.0,
+        "altitude_m": 82.0,
+        "yaw_deg": -17.0,
+        "pitch_deg": -18.0
+      },
+      "weather": "clean"
+    },
+    {
+      "path": "test/query_drone/0019/02.png",
+      "location_id": 19,
+      "location_name": "0019",
+      "view": "drone",
+      "split": "query",
+      "pose": {
+        "x_m": 60.0,
+        "y_m": 40.0,
+        "altitude_m": 94.0,
+        "yaw_deg": -6.0,
+        "pitch_deg": -18.0
+      },
+      "weather": "clean"
+    },
+    {
+      "path": "test/gallery_drone/0019/02.png",
+      "location_id": 19,
+      "location_name": "0019",
+      "view": "drone",
+      "split": "gallery",
+      "pose": {
+        "x_m": 60.0,
+        "y_m": 40.0,
+        "altitude_m": 94.0,
+        "yaw_deg": -6.0,
+        "pitch_deg": -18.0
+      },
+      "weather": "clean"
+    },
+    {
+      "path": "test/query_drone/0019/03.png",
+      "location_id": 19,
+      "location_name": "0019",
+      "view": "drone",
+      "split": "query",
+      "pose": {
+        "x_m": 60.0,
+        "y_m": 40.0,
+        "altitude_m": 106.0,
+        "yaw_deg": 5.0,
+        "pitch_deg": -18.0
+      },
+      "weather": "clean"
+    },
+    {
+      "path": "test/gallery_drone/0019/03.png",
+      "location_id": 19,
+      "location_name": "0019",
+      "view": "drone",
+      "split": "gallery",
+      "pose": {
+        "x_m": 60.0,
+        "y_m": 40.0,
+        "altitude_m": 106.0,
+        "yaw_deg": 5.0,
+        "pitch_deg": -18.0
+      },
+      "weather": "clean"
+    },
+    {
+      "path": "test/query_satellite/0019/00.png",
+      "location_id": 19,
+      "location_name": "0019",
+      "view": "satellite",
+      "split": "query",
+      "pose": {
+        "x_m": 60.0,
+        "y_m": 40.0,
+        "altitude_m": 500.0,
+        "yaw_deg": 0.0,
+        "pitch_deg": -90.0
+      },
+      "weather": "clean"
+    },
+    {
+      "path": "test/gallery_satellite/0019/00.png",
+      "location_id": 19,
+      "location_name": "0019",
+      "view": "satellite",
+      "split": "gallery",
+      "pose": {
+        "x_m": 60.0,
+        "y_m": 40.0,
+        "altitude_m": 500.0,
+        "yaw_deg": 0.0,
+        "pitch_deg": -90.0
+      },
+      "weather": "clean"
+    },
+    {
+      "path": "test/query_street/0019/00.png",
+      "location_id": 19,
+      "location_name": "0019",
+      "view": "street",
+      "split": "query",
+      "pose": {
+        "x_m": 60.0,
+        "y_m": 40.0,
+        "altitude_m": 1.7,
+        "yaw_deg": 0.0,
+        "pitch_deg": 0.0
+      },
+      "weather": "clean"
+    },
+    {
+      "path": "test/gallery_street/0019/00.png",
+      "location_id": 19,
+      "location_name": "0019",
+      "view": "street",
+      "split": "gallery",
+      "pose": {
+        "x_m": 60.0,
+        "y_m": 40.0,
+        "altitude_m": 1.7,
+        "yaw_deg": 0.0,
+        "pitch_deg": 0.0
+      },
+      "weather": "clean"
+    }
+  ]
+}
