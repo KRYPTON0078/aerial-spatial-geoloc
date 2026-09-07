@@ -1,0 +1,35 @@
+# Ablation: view-specific (dual-branch) encoders instead of a shared backbone.
+experiment_name: ablation_dual_branch
+
+model:
+  backbone: tiny_cnn
+  encoder: dual
+  embed_dim: 128
+  pretrained: false
+  dropout: 0.0
+
+loss:
+  name: infonce_id
+  temperature: 0.07
+  id_weight: 0.5
+  infonce_weight: 1.0
+
+data:
+  dataset: demo
+  root: data/demo
+  image_size: 64
+  query_view: drone
+  gallery_view: satellite
+  weather_aug: false
+
+train:
+  epochs: 5
+  batch_size: 16
+  lr: 0.001
+  seed: 42
+  output_dir: outputs/ablation_dual_branch
+  device: auto
+  deterministic: true
+
+eval:
+  recall_ks: [1, 5, 10]
